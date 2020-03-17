@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>购物车</title>
+	<link rel="stylesheet" href="./lib/jquery/jquery-ui.css"/>
+	<link rel="stylesheet" href="./lib/jquery/jquery-ui.theme.css"/>
+	<link rel="stylesheet" href="./css/shopCar.css" />
+</head>
+<body>
+
+  <div class="shading"></div>
+    <div class="confirm confirm1">
+      <div class="confirm-top">
+        <div>消息确认</div>
+        <img src="img/shopCar/icon-dle2.png">
+      </div>
+      <div class="confirm-middle">是否删除？</div>
+      <div class="confirm-bottom">
+        <div id="deleteItem" class="button-yes">确定</div>
+        <div class="button-no">取消</div>
+      </div>
+    </div>
+    
+    <div class="confirm confirm2">
+      <div class="confirm-top">
+        <div>消息确认</div>
+        <img src="img/shopCar/icon-dle2.png">
+      </div>
+      <div class="confirm-middle">是否清空购物车？</div>
+      <div class="confirm-bottom">
+        <div id="deleteAll" class="button-yes">确定</div>
+        <div class="button-no">取消</div>
+      </div>
+    </div>
+    
+    <div class="confirm confirm3">
+      <div class="confirm-top">
+        <div>消息确认</div>
+        <img src="img/shopCar/icon-dle2.png">
+      </div>
+      <div class="confirm-middle">您还没有选择商品!</div>
+      <div class="confirm-bottom">
+        <div class="button-yes button-close">确定</div>
+      </div>
+    </div>
+    
+    <div class="confirm confirm4">
+      <div class="confirm-top">
+        <div>消息确认</div>
+        <img src="img/shopCar/icon-dle2.png">
+      </div>
+      <div class="confirm-middle">购物车为空,请您先购物!</div>
+      <div class="confirm-bottom">
+        <div class="button-yes button-close">确定</div>
+      </div>
+    </div>
+    
+    <div class="confirm confirm5">
+      <div class="confirm-top">
+        <div>消息确认</div>
+        <img src="img/shopCar/icon-dle2.png">
+      </div>
+      <div class="confirm-middle">请您先登录</div>
+      <div class="confirm-bottom">
+        <div id="toLogin" class="button-yes">确定</div>
+        <div class="button-no">取消</div>
+      </div>
+    </div>
+  <div class="box1">
+  	<div class="logo">
+  		<img src="img/shopCar/cart-icon.png">
+  		<ul>
+  			<li>
+  				<a href="#">收藏夹</a>
+  			</li>
+  			<li>
+  				<a href="#">新会员注册</a>
+  			</li>
+  			<li>
+  				<a href="#">登录</a>
+  			</li>
+  			<li>
+  				<a href="#">我的账户</a>
+  			</li>
+  			<li>
+  				<a href="#">收藏本站</a>
+  			</li>
+  		</ul>
+  	</div>
+  </div>
+  <div class="box2">
+  	<div class="main1">
+  		<div class="main1-title">
+  			<input id="selectAll" class="select" type="checkbox" >
+  			<div class="title1">全选</div>
+  			<div>序号</div>
+  			<div class="title3">商品名称</div>
+  			<div>规格</div>
+  			<div>一般价</div>
+  			<div>No5价</div>
+  			<div>数量</div>
+  			<div>付款小计 </div>
+  			<div>转入收藏夹 </div>
+  			<div>删除</div>
+  		</div>
+  		<div class="void-info">
+  			
+					您的购物车为空，请您先购物！
+				
+  		</div>
+  		<div class="main1-item"></div>
+  	</div>
+  </div>
+  <div class="box3">
+  	<div class="main2">
+  		<div class="left">
+  			
+					输入兑换劵账号：
+					<input type="text" >
+					<button>兑换商品</button>
+  		</div>
+  		<div class="right">
+  			<div>
+  				<img src="img/shopCar/icon-dle.png">
+  				<span id="clearCarts2">清空购物车</span>
+  			</div>
+  			<img id="continue" src="img/shopCar/btn-go-on.png">
+  			<img id="count" src="img/shopCar/btn-go-sett.png">
+  		</div>
+  	</div>
+  </div>
+  <div class="box4">
+  	<div class="main3">
+  		<div class="main3-title">
+  			超&nbsp;值&nbsp;特&nbsp;惠&nbsp;专&nbsp;区
+  		</div>
+  		<div class="box">
+  			<div class="small-box">
+  				<div class="top">
+							迷你装香水特惠区
+						</div>
+  				<div class="bottom">
+  					<div>
+  						<input type="radio" name="small-box1">
+  						<a href="#">Moschino 爱恋爱女士香水 4.9ml </a>
+  					</div>
+  					<div>
+  						<input type="radio" name="small-box1">
+  						<a href="#">Moschino 爱恋爱女士香水 4.9ml </a>
+  					</div>
+  					<div>
+  						<input type="radio" name="small-box1">
+  						<a href="#">Moschino 爱恋爱女士香水 4.9ml </a>
+  					</div>
+  					<img src="img/shopCar/btn-sp-add.png">
+  				</div>
+  			</div>
+  			<div class="small-box">
+  				<div class="top">
+							迷你装香水特惠区
+						</div>
+  				<div class="bottom">
+  					<div>
+  						<input type="radio" name="small-box1">
+  						<a href="#">Moschino 爱恋爱女士香水 4.9ml </a>
+  					</div>
+  					<div>
+  						<input type="radio" name="small-box1">
+  						<a href="#">Moschino 爱恋爱女士香水 4.9ml </a>
+  					</div>
+  					<div>
+  						<input type="radio" name="small-box1">
+  						<a href="#">Moschino 爱恋爱女士香水 4.9ml </a>
+  					</div>
+  					<img src="img/shopCar/btn-sp-add.png">
+  				</div>
+  			</div>
+  			<div class="small-box">
+  				<div class="top">
+							迷你装香水特惠区
+						</div>
+  				<div class="bottom">
+  					<div>
+  						<input type="radio" name="small-box1">
+  						<a href="#">Moschino 爱恋爱女士香水 4.9ml </a>
+  					</div>
+  					<div>
+  						<input type="radio" name="small-box1">
+  						<a href="#">Moschino 爱恋爱女士香水 4.9ml </a>
+  					</div>
+  					<div>
+  						<input type="radio" name="small-box1">
+  						<a href="#">Moschino 爱恋爱女士香水 4.9ml </a>
+  					</div>
+  					<img src="img/shopCar/btn-sp-add.png">
+  				</div>
+  			</div>
+  			<div class="small-box">
+  				<div class="top">
+							迷你装香水特惠区
+						</div>
+  				<div class="bottom">
+  					<div>
+  						<input type="radio" name="small-box1">
+  						<a href="#">Moschino 爱恋爱女士香水 4.9ml </a>
+  					</div>
+  					<div>
+  						<input type="radio" name="small-box1">
+  						<a href="#">Moschino 爱恋爱女士香水 4.9ml </a>
+  					</div>
+  					<div>
+  						<input type="radio" name="small-box1">
+  						<a href="#">Moschino 爱恋爱女士香水 4.9ml </a>
+  					</div>
+  					<img src="img/shopCar/btn-sp-add.png">
+  				</div>
+  			</div>
+  			<div class="small-box">
+  				<div class="top">
+							迷你装香水特惠区
+						</div>
+  				<div class="bottom">
+  					<div>
+  						<input type="radio" name="small-box1">
+  						<a href="#">Moschino 爱恋爱女士香水 4.9ml </a>
+  					</div>
+  					<div>
+  						<input type="radio" name="small-box1">
+  						<a href="#">Moschino 爱恋爱女士香水 4.9ml </a>
+  					</div>
+  					<div>
+  						<input type="radio" name="small-box1">
+  						<a href="#">Moschino 爱恋爱女士香水 4.9ml </a>
+  					</div>
+  					<img src="img/shopCar/btn-sp-add.png">
+  				</div>
+  			</div>
+  			<div class="small-box">
+  				<div class="top">
+							迷你装香水特惠区
+						</div>
+  				<div class="bottom">
+  					<div>
+  						<input type="radio" name="small-box1">
+  						<a href="#">Moschino 爱恋爱女士香水 4.9ml </a>
+  					</div>
+  					<div>
+  						<input type="radio" name="small-box1">
+  						<a href="#">Moschino 爱恋爱女士香水 4.9ml </a>
+  					</div>
+  					<div>
+  						<input type="radio" name="small-box1">
+  						<a href="#">Moschino 爱恋爱女士香水 4.9ml </a>
+  					</div>
+  					<img src="img/shopCar/btn-sp-add.png">
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+   <script type="text/javascript" src="http://mockjs.com/dist/mock.js"></script>
+   <script src="lib/template.js"/></script>
+   <script src="lib/require.js" data-main="js/shopCar.js" async="true"></script>
+</body>
+</html>

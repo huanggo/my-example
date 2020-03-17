@@ -1,0 +1,10 @@
+requirejs.config({
+	baseUrl:"js/",
+	paths:{
+		"jquery":"../lib/jquery/jquery-1.11.3",//命名：路径，其他地方依赖关系的用此名。
+		"jquery.ui":"../lib/jquery/jquery-ui",
+		"tools":"common/tools",
+		"common":"common/common",
+		"compart":"common/commonpart"
+	}
+})
